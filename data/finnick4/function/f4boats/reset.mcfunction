@@ -9,3 +9,7 @@ tellraw @a ["",{"text":"Datapack","color":"light_purple"},{"text":" \"","color":
 
 # create scoreboards
 scoreboard objectives add finnick4.boats.checkpoint dummy
+scoreboard objectives add finnick4.boats.calc dummy
+scoreboard players set .length finnick4.boats.checkpoint 4 
+# whitch n checkpoint will be the finnish line?
+
