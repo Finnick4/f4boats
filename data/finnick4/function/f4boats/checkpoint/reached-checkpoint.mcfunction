@@ -14,20 +14,20 @@ tag @s add finnick4.f4boats.reached-checkpoint
 
 $say Debug | I just reached checkpoint (n = $(checkpointNumber))
 
-execute unless entity @s[tag=finnick4.f4boats.race] run function finnick4:f4boats/not-part-of-race
+execute unless entity @s[tag=finnick4.f4boats.race] run function finnick4:f4boats/checkpoint/not-part-of-race
 execute unless entity @s[tag=finnick4.f4boats.race] run return fail
 
-$execute if score @s finnick4.boats.checkpoint matches $(checkpointNumber) run function finnick4:f4boats/activate-checkpoint {"checkpointNumber":$(checkpointNumber)}
+$execute if score @s finnick4.boats.checkpoint matches $(checkpointNumber) run function finnick4:f4boats/checkpoint/activate-checkpoint {"checkpointNumber":$(checkpointNumber)}
 execute unless entity @s[tag=finnick4.f4boats.reached-checkpoint] run return fail
 
 # check for previous checkpoint
 $scoreboard players set .checkpointcalc finnick4.boats.calc $(checkpointNumber)
 scoreboard players remove .checkpointcalc finnick4.boats.calc 1
-$execute if score @s finnick4.boats.checkpoint = .checkpointcalc finnick4.boats.calc run function finnick4:f4boats/activate-checkpoint {"checkpointNumber":$(checkpointNumber)}
+$execute if score @s finnick4.boats.checkpoint = .checkpointcalc finnick4.boats.calc run function finnick4:f4boats/checkpoint/activate-checkpoint {"checkpointNumber":$(checkpointNumber)}
 execute unless entity @s[tag=finnick4.f4boats.reached-checkpoint] run return fail
 
 
-function finnick4:f4boats/incorrect-checkpoint
+function finnick4:f4boats/checkpoint/incorrect-checkpoint
 
 tag @s remove finnick4.f4boats.reached-checkpoint
 
