@@ -5,11 +5,16 @@
  # Created by Finnick4.
 ##
 
-say This is a new checkpoint
+
 
 scoreboard players add @s finnick4.boats.checkpoint 1
 
 
 execute if score @s finnick4.boats.checkpoint = .length finnick4.boats.checkpoint run function finnick4:f4boats/checkpoint/finnish-race
+
+function finnick4:f4boats/timer/calculate-seconds
+execute if entity @s[tag=finnick4.f4boats.race] run tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"]","color":"dark_gray"},{"text":" You have reached ","color":"gray"},{"text":"checkpoint ","color":"yellow"},{"score":{"name":"@s","objective":"finnick4.boats.checkpoint"},"color":"yellow"},{"text":" out of ","color":"yellow"},{"score":{"name":".length","objective":"finnick4.boats.checkpoint"},"color":"yellow"},{"text":". Your current time is ","color":"gray"},{"score":{"name":"@s","objective":"finnick4.boats.time.seconds"},"color":"dark_aqua"},{"text":" seconds","color":"dark_aqua"},{"text":"!","color":"gray"}]
+execute unless entity @s[tag=finnick4.f4boats.race] run tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"]","color":"dark_gray"},{"text":" You have ","color":"gray"},{"text":"finished the track","color":"yellow"},{"text":"! Your final time is ","color":"gray"},{"score":{"name":"@s","objective":"finnick4.boats.time.seconds"},"color":"dark_aqua"},{"text":" seconds","color":"dark_aqua"},{"text":"!","color":"gray"}]
+
 
 tag @s remove finnick4.f4boats.reached-checkpoint

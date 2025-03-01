@@ -14,3 +14,6 @@ scoreboard objectives add finnick4.boats.calc dummy
 scoreboard objectives add finnick4.boats.time.start dummy
 scoreboard objectives add finnick4.boats.time.end dummy
 scoreboard objectives add finnick4.boats.time.duration dummy
+scoreboard objectives add finnick4.boats.time.seconds dummy
+
+scoreboard players set .20 finnick4.boats.calc 20
