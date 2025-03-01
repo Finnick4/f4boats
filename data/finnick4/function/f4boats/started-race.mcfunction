@@ -9,6 +9,8 @@ scoreboard players set @s finnick4.boats.checkpoint 0
 tag @s add finnick4.f4boats.race
 
 tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"]","color":"dark_gray"},{"text":" You ","color":"gray"},{"text":"started the race","color":"gold"},{"text":"! Time starts now!","color":"gray"}]
+title @s subtitle {"text":"Let's go! Good luck!","bold":true,"color":"gold"}
+title @s title {"text":""}
 
 function finnick4:f4boats/setup/internal/calculate-length
 

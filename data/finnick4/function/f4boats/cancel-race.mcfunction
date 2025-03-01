@@ -1,5 +1,6 @@
-say canceled the race!
-
+title @s title {"text":""}
+title @s subtitle {"text":"Canceled the race","color":"red"}
+tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"]","color":"dark_gray"},{"text":" The current race ","color":"gray"},{"text":"was canceled","color":"red"},{"text":"!","color":"gray"}]
 
 scoreboard players reset @s finnick4.boats.checkpoint
 tag @s remove finnick4.f4boats.race
