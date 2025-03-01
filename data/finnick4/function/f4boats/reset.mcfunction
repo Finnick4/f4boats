@@ -11,5 +11,4 @@ tellraw @a ["",{"text":"Datapack","color":"light_purple"},{"text":" \"","color":
 scoreboard objectives add finnick4.boats.checkpoint dummy
 scoreboard objectives add finnick4.boats.calc dummy
 
-function finnick4:f4boats/setup/internal/calculate-length
 
