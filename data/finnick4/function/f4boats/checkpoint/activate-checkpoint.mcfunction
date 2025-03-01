@@ -5,7 +5,7 @@
  # Created by Finnick4.
 ##
 
-say the checkpoint matches the current checkpoint!
+say This is a new checkpoint
 
 scoreboard players add @s finnick4.boats.checkpoint 1
 
