@@ -9,6 +9,8 @@
 
 scoreboard players add @s finnick4.boats.checkpoint 1
 
+title @s subtitle {"text":"New checkpoint!","color":"yellow"}
+title @s title {"text":""}
 
 execute if score @s finnick4.boats.checkpoint = .length finnick4.boats.checkpoint run function finnick4:f4boats/checkpoint/finnish-race
 

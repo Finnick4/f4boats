@@ -18,6 +18,5 @@ execute unless entity @s[tag=finnick4.f4boats.reached-checkpoint] run return fai
 
 # if neither
 
-say this is neiter
 function finnick4:f4boats/checkpoint/incorrect-checkpoint
 tag @s remove finnick4.f4boats.reached-checkpoint
