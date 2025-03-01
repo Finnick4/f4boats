@@ -10,3 +10,4 @@ tag @s add finnick4.f4boats.race
 
 say I started the race! 
 
+function finnick4:f4boats/setup/internal/calculate-length
