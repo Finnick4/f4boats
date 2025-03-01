@@ -11,3 +11,6 @@ tag @s add finnick4.f4boats.race
 say I started the race! 
 
 function finnick4:f4boats/setup/internal/calculate-length
+
+execute store result score @s finnick4.boats.time.start run time query gametime
+
