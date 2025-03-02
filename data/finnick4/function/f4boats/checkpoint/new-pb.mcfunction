@@ -4,7 +4,7 @@ tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua
 
 execute store result storage pdb:main in.PB[0] int 1 run scoreboard players get @s finnick4.boats.time.duration
 execute store result storage pdb:main in.PB[1] int 1 run scoreboard players get @s finnick4.boats.time.seconds
-execute store result storage pdb:main in.PB[2] byte 1 run scoreboard players get @s finnick4.boats.time.decimal.1
-execute store result storage pdb:main in.PB[3] byte 1 run scoreboard players get @s finnick4.boats.time.decimal.2
+execute store result storage pdb:main in.PB[2] int 1 run scoreboard players get @s finnick4.boats.time.decimal.1
+execute store result storage pdb:main in.PB[3] int 1 run scoreboard players get @s finnick4.boats.time.decimal.2
 
 function pdb:save_me
