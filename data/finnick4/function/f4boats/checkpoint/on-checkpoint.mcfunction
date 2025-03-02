@@ -1,6 +1,9 @@
 
 tag @s add finnick4.f4boats.reached-checkpoint
 
+function finnick4:f4boats/timer/calculate-length-till-now
+
+
 # check if this is current checkpoint
 execute store result score .checkpointcalc finnick4.boats.calc run scoreboard players get @s finnick4.boats.checkpoint
 
@@ -15,6 +18,5 @@ execute unless entity @s[tag=finnick4.f4boats.reached-checkpoint] run return fai
 
 # if neither
 
-say this is neiter
 function finnick4:f4boats/checkpoint/incorrect-checkpoint
 tag @s remove finnick4.f4boats.reached-checkpoint

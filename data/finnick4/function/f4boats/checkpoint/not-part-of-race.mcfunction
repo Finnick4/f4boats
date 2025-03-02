@@ -1,1 +1,0 @@
-say You have not started a race! head to the start!
