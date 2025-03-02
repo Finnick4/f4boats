@@ -9,5 +9,10 @@ tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua
 execute as @s at @s run playsound minecraft:item.goat_horn.sound.0 master @s ~ ~ ~ 100 1.5
 execute as @s at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 100 1.2
 
+# Check for PB
+function pdb:get_me
+execute store result score .pb finnick4.boats.calc run data get storage pdb:main out.PB[0]
+execute if score .pb finnick4.boats.calc >= @s finnick4.boats.time.duration run function finnick4:f4boats/checkpoint/new-pb
+
 scoreboard players reset @s finnick4.boats.checkpoint
 tag @s remove finnick4.f4boats.race
