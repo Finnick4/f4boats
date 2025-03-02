@@ -5,3 +5,5 @@ tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua
 scoreboard players reset @s finnick4.boats.checkpoint
 tag @s remove finnick4.f4boats.race
 
+execute at @s run playsound minecraft:block.beacon.deactivate master @s ~ ~ ~ 1 1
+
