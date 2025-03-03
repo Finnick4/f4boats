@@ -7,3 +7,6 @@ tag @s remove finnick4.f4boats.race
 
 execute at @s run playsound minecraft:block.beacon.deactivate master @s ~ ~ ~ 1 1
 
+scoreboard players add @s finnick4.boats.stat.canceled 1
+scoreboard players add .global finnick4.boats.stat.canceled 1
+

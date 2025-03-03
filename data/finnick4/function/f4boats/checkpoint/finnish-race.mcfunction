@@ -16,3 +16,6 @@ function finnick4:f4boats/checkpoint/set-latest
 
 scoreboard players reset @s finnick4.boats.checkpoint
 tag @s remove finnick4.f4boats.race
+
+scoreboard players add @s finnick4.boats.stat.finished 1
+scoreboard players add .global finnick4.boats.stat.finished 1
