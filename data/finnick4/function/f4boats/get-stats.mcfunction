@@ -10,9 +10,9 @@ tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua
 
 tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"]","color":"dark_gray"},{"text":" Started races: ","color":"gray"},{"score":{"name":"@s","objective":"finnick4.boats.stat.started"},"color":"light_purple"}]
 tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"]","color":"dark_gray"},{"text":" Finished races: ","color":"gray"},{"score":{"name":"@s","objective":"finnick4.boats.stat.finished"},"color":"light_purple"}]
-tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"]","color":"dark_gray"},{"text":" Canceled races: ","color":"gray"},{"score":{"name":"@s","objective":"finnick4.boats.stat.canceled"},"color":"light_purple"}]
 tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"]","color":"dark_gray"},{"text":" Total Checkpoints: ","color":"gray"},{"score":{"name":"@s","objective":"finnick4.boats.stat.checkpoints"},"color":"light_purple"}]
 tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"]","color":"dark_gray"},{"text":" Returns: ","color":"gray"},{"score":{"name":"@s","objective":"finnick4.boats.stat.returns"},"color":"light_purple"}]
+tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"]","color":"dark_gray"},{"text":" Canceled races: ","color":"gray"},{"score":{"name":"@s","objective":"finnick4.boats.stat.canceled"},"color":"light_purple"}]
 tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"]","color":"dark_gray"},{"text":" Times you visited this panel: ","color":"gray"},{"score":{"name":"@s","objective":"finnick4.boats.stat.menuviews"},"color":"light_purple"}]
 
 
