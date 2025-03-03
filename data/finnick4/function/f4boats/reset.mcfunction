@@ -18,8 +18,14 @@ scoreboard objectives add finnick4.boats.time.seconds dummy
 scoreboard objectives add finnick4.boats.time.decimal.1 dummy
 scoreboard objectives add finnick4.boats.time.decimal.2 dummy
 
+# pb
+scoreboard objectives add finnick4.boats.time.duration dummy
+scoreboard objectives add finnick4.boats.time.seconds dummy
+scoreboard objectives add finnick4.boats.time.decimal.1 dummy
+scoreboard objectives add finnick4.boats.time.decimal.2 dummy
+
+
 scoreboard players set .20 finnick4.boats.calc 20
 scoreboard players set .10 finnick4.boats.calc 10
 scoreboard players set .2 finnick4.boats.calc 2
 
-scoreboard objectives add pdb dummy
