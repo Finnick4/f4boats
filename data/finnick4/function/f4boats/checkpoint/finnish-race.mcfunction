@@ -16,7 +16,7 @@ execute store result score .pb finnick4.boats.calc run data get storage pdb:main
 execute if score .pb finnick4.boats.calc >= @s finnick4.boats.time.duration run function finnick4:f4boats/checkpoint/new-pb
 
 # store latest
-function finnick4:f4boats/checkpoint/set-latest
+#function finnick4:f4boats/checkpoint/set-latest
 
 scoreboard players reset @s finnick4.boats.checkpoint
 tag @s remove finnick4.f4boats.race
