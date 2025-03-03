@@ -19,3 +19,5 @@ function finnick4:f4boats/setup/internal/calculate-length
 
 execute store result score @s finnick4.boats.time.start run time query gametime
 
+scoreboard players add @s finnick4.boats.stat.started 1
+scoreboard players add .global finnick4.boats.stat.started 1

@@ -14,3 +14,7 @@ tag @e[tag=finnick4.f4boats.checkpoint.found] remove finnick4.f4boats.checkpoint
 
 execute on vehicle run tag @s remove finnick4.f4boats.return
 execute as @s at @s run playsound minecraft:entity.enderman.teleport master @s ~ ~ ~ 1 0.5
+
+scoreboard players add @s finnick4.boats.stat.returns 1
+scoreboard players add .global finnick4.boats.stat.returns 1
+
