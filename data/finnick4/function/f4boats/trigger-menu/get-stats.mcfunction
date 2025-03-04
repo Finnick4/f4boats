@@ -1,3 +1,4 @@
+playsound minecraft:entity.villager.trade master @s ~ ~ ~ 1
 
 scoreboard players add @s finnick4.boats.stat.menuviews 1
 scoreboard players add .global finnick4.boats.stat.menuviews 1
