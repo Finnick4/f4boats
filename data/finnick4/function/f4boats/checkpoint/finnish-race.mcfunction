@@ -24,3 +24,14 @@ tag @s remove finnick4.f4boats.race
 
 scoreboard players add @s finnick4.boats.stat.finished 1
 scoreboard players add .global finnick4.boats.stat.finished 1
+
+# Advancements
+advancement grant @s only finnick4:boats/first
+execute if score @s finnick4.boats.stat.finished matches 3.. run advancement grant @s only finnick4:boats/third
+execute if score @s finnick4.boats.stat.finished matches 5.. run advancement grant @s only finnick4:boats/advanced
+execute if score @s finnick4.boats.stat.finished matches 10.. run advancement grant @s only finnick4:boats/pro
+execute if score @s finnick4.boats.stat.finished matches 20.. run advancement grant @s only finnick4:boats/expert
+
+execute on vehicle if entity @s[type=minecraft:birch_boat] on passengers run advancement grant @s only finnick4:boats/roman
+execute on vehicle if entity @s[type=minecraft:birch_chest_boat] on passengers run advancement grant @s only finnick4:boats/roman
+
