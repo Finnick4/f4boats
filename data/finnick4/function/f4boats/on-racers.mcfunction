@@ -13,3 +13,6 @@ execute as @e[type=marker, tag=f4boats.checkpoint] if score @s finnick4.boats.ch
 execute at @e[tag=finnick4.f4boats.checkpointparticle.found] run particle dust{color:[1.000,0.667,0.000],scale:4} ~ ~2 ~ 2 2 2 0 1 force @s
 
 tag @e[tag=finnick4.f4boats.checkpointparticle.found] remove finnick4.f4boats.checkpointparticle.found
+
+# check for out-of-boat
+execute unless data entity @s RootVehicle run function finnick4:f4boats/cancel-race
