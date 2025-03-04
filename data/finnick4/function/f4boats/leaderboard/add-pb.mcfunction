@@ -1,6 +1,4 @@
 
-say Your new PB was added to the leaderboard!
-
 
 
 ## check and if needed eliminate previous record of same name
