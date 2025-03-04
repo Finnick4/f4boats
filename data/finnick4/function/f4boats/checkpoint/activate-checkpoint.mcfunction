@@ -1,11 +1,6 @@
-##
- # activate-checkpoint.mcfunction
- # f4boats
- #
- # Created by Finnick4.
-##
 
 
+function finnick4:f4boats/timer/calculate-length-till-now
 
 scoreboard players add @s finnick4.boats.checkpoint 1
 
@@ -19,3 +14,7 @@ execute if entity @s[tag=finnick4.f4boats.race] run tellraw @s ["",{"text":"[","
 execute as @s at @s run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 0.7
 
 tag @s remove finnick4.f4boats.reached-checkpoint
+
+scoreboard players add @s finnick4.boats.stat.checkpoints 1
+scoreboard players add .global finnick4.boats.stat.checkpoints 1
+
