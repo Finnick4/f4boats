@@ -1,0 +1,21 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:iron_ingot",
+        "components": {},
+        "count": 1
+      },
+      "title": "Professional racer",
+      "description": "You become even more skilled at ice boat racing after completing your tenth round!",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "finnick4:boats/advanced",
+    "criteria": {
+      "root": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

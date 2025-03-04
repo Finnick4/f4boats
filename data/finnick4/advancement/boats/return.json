@@ -1,0 +1,21 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:compass",
+        "components": {},
+        "count": 1
+      },
+      "title": "Let me guide you!",
+      "description": "Get returned to a previous checkpoint",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "finnick4:boats/first",
+    "criteria": {
+      "root": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
