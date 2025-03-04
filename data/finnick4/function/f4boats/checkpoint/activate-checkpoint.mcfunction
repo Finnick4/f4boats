@@ -1,11 +1,6 @@
-##
- # activate-checkpoint.mcfunction
- # f4boats
- #
- # Created by Finnick4.
-##
 
 
+function finnick4:f4boats/timer/calculate-length-till-now
 
 scoreboard players add @s finnick4.boats.checkpoint 1
 

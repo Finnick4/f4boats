@@ -1,7 +1,6 @@
 
 tag @s add finnick4.f4boats.reached-checkpoint
 
-function finnick4:f4boats/timer/calculate-length-till-now
 
 
 # check if this is current checkpoint
