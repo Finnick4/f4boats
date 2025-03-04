@@ -1,6 +1,38 @@
 
-say this pb is worthy of the leaderboard
+say Your new PB was added to the leaderboard!
 
+
+
+## check and if needed eliminate previous record of same name
+
+# get the name
+execute at @s unless entity 3ecf96f6-5342-4ab1-a629-10926cea8230 run summon item_display ~ ~ ~ {UUID:[I;1053791990,1396853425,-1507258222,1827308080]}
+
+loot replace entity 3ecf96f6-5342-4ab1-a629-10926cea8230 container.0 loot finnick4:player_head
+data modify storage finnick4:boats.comp original set from entity 3ecf96f6-5342-4ab1-a629-10926cea8230 item.components."minecraft:profile".name
+data modify storage finnick4:boats.comp strcmp set from storage finnick4:boats.comp original
+kill 3ecf96f6-5342-4ab1-a629-10926cea8230
+
+# check for on LB
+execute store success score .strcmp finnick4.boats.calc run data modify storage finnick4:boats.comp strcmp set from storage finnick4:boats scores[0].name
+data modify storage finnick4:boats.comp strcmp set from storage finnick4:boats.comp original
+execute if score .strcmp finnick4.boats.calc matches 0 run function finnick4:f4boats/leaderboard/remove-entry {n:0}
+
+execute store success score .strcmp finnick4.boats.calc run data modify storage finnick4:boats.comp strcmp set from storage finnick4:boats scores[1].name
+data modify storage finnick4:boats.comp strcmp set from storage finnick4:boats.comp original
+execute if score .strcmp finnick4.boats.calc matches 0 run function finnick4:f4boats/leaderboard/remove-entry {n:1}
+
+execute store success score .strcmp finnick4.boats.calc run data modify storage finnick4:boats.comp strcmp set from storage finnick4:boats scores[2].name
+data modify storage finnick4:boats.comp strcmp set from storage finnick4:boats.comp original
+execute if score .strcmp finnick4.boats.calc matches 0 run function finnick4:f4boats/leaderboard/remove-entry {n:2}
+
+execute store success score .strcmp finnick4.boats.calc run data modify storage finnick4:boats.comp strcmp set from storage finnick4:boats scores[3].name
+data modify storage finnick4:boats.comp strcmp set from storage finnick4:boats.comp original
+execute if score .strcmp finnick4.boats.calc matches 0 run function finnick4:f4boats/leaderboard/remove-entry {n:3}
+
+execute store success score .strcmp finnick4.boats.calc run data modify storage finnick4:boats.comp strcmp set from storage finnick4:boats scores[4].name
+data modify storage finnick4:boats.comp strcmp set from storage finnick4:boats.comp original
+execute if score .strcmp finnick4.boats.calc matches 0 run function finnick4:f4boats/leaderboard/remove-entry {n:4}
 # load the current LB entries
 execute store result score .lb.1 finnick4.boats.calc run data get storage finnick4:boats scores[0].time
 execute store result score .lb.2 finnick4.boats.calc run data get storage finnick4:boats scores[1].time

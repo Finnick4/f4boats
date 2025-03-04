@@ -16,6 +16,10 @@ data modify storage finnick4:boats scores[3] merge from storage finnick4:boats.c
 # old 4 -> 5
 data modify storage finnick4:boats scores[4] merge from storage finnick4:boats.copy scores[3]
 
+# safety copy of 5
+data modify storage finnick4:boats scores[5] merge from storage finnick4:boats.copy scores[4]
+
+
 # restore previous entries
 
 data modify storage finnick4:boats scores[0] merge from storage finnick4:boats.copy scores[0]
