@@ -1,5 +1,4 @@
 
-data modify storage finnick4:boats scores[1] merge from storage finnick4:boats scores[2]
 
 data modify storage finnick4:boats scores[2] merge from storage finnick4:boats scores[3]
 

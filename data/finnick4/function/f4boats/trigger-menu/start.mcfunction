@@ -1,7 +1,7 @@
 
 playsound minecraft:entity.villager.trade master @s ~ ~ ~ 1
 
-execute unless data entity @s RootVehicle run tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"]","color":"dark_gray"},{"text":" To start, you have to be ","color":"gray"},{"text":"seated in a boat","color":"red"},{"text":"!","color":"gray"}]
+execute unless data entity @s RootVehicle run tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"]","color":"dark_gray"},{"text":" To start, you have to be ","color":"gray"},{"text":"seated in a boat","color":"red"},{"text":"!","color":"gray"}]
 execute unless data entity @s RootVehicle run return fail
 
 scoreboard players set @s finnick4.boats.checkpoint -1
