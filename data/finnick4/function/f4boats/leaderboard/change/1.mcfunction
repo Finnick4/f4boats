@@ -16,3 +16,6 @@ data modify storage finnick4:boats scores[3] merge from storage finnick4:boats.c
 
 # old 4 -> 5
 data modify storage finnick4:boats scores[4] merge from storage finnick4:boats.copy scores[3]
+
+# set the name
+function finnick4:f4boats/leaderboard/set-name {n:0}

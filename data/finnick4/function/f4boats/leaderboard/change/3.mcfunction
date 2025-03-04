@@ -17,3 +17,7 @@ data modify storage finnick4:boats scores[4] merge from storage finnick4:boats.c
 # restore previous entries
 data modify storage finnick4:boats scores[0] merge from storage finnick4:boats.copy scores[0]
 data modify storage finnick4:boats scores[1] merge from storage finnick4:boats.copy scores[1]
+
+# set the name
+function finnick4:f4boats/leaderboard/set-name {n:2}
+

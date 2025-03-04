@@ -6,7 +6,7 @@ execute store result score .lb.1 finnick4.boats.calc run data get storage finnic
 execute store result score .lb.2 finnick4.boats.calc run data get storage finnick4:boats scores[1].time
 execute store result score .lb.3 finnick4.boats.calc run data get storage finnick4:boats scores[2].time
 execute store result score .lb.4 finnick4.boats.calc run data get storage finnick4:boats scores[3].time
-# number 5 was already loaded
+execute store result score .lb.5 finnick4.boats.calc run data get storage finnick4:boats scores[4].time
 
 # make copy of current LB
 data modify storage finnick4:boats.copy scores set from storage finnick4:boats scores
