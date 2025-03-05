@@ -1,5 +1,4 @@
 
-execute if score @s finnick4.boats.seasonal.duration = @s finnick4.boats.time.duration run function finnick4:f4boats/checkpoint/no-seasonal
 execute if score @s finnick4.boats.seasonal.duration = @s finnick4.boats.time.duration run return fail
 
 

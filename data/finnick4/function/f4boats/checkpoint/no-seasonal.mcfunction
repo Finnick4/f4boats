@@ -1,3 +1,0 @@
-
-say no seasonal
-
