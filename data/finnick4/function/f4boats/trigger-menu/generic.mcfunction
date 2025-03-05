@@ -1,7 +1,7 @@
 
 playsound minecraft:entity.villager.trade master @s ~ ~ ~ 1
 
-tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"]","color":"dark_gray"},{"text":" What do you want to do?","color":"gray"}]
+tellraw @s ["", {"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"]","color":"dark_gray"},{"text":" What do you want to do?","color":"gray"}]
 tellraw @s ["", {"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"] [","color":"dark_gray"},{"text":"Show own stats","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger iceboat set 101"},"hoverEvent":{"action":"show_text","contents":{"text":"Show your own stats"}}},{"text":"]","color":"dark_gray"}]
 tellraw @s ["", {"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"] [","color":"dark_gray"},{"text":"Show PBs","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger iceboat set 102"},"hoverEvent":{"action":"show_text","contents":{"text":"Show the personal time\nrecords of everyone that\nis currently on the server"}}},{"text":"]","color":"dark_gray"}]
 tellraw @s ["", {"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"] [","color":"dark_gray"},{"text":"Show leaderboard","color":"gold","clickEvent":{"action":"run_command","value":"/trigger iceboat set 103"},"hoverEvent":{"action":"show_text","contents":{"text":"Show the all-time\nleaderboard in time."}}},{"text":"]","color":"dark_gray"}]
