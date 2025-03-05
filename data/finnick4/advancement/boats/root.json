@@ -1,0 +1,21 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:oak_boat",
+        "components": {},
+        "count": 1
+      },
+      "title": "Finnick4's Ice Boat Racing",
+      "description": "You have found the racing track! Now go and have fun!",
+      "background": "minecraft:textures/block/ice.png",
+      "frame": "task",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "criteria": {
+      "root": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

@@ -25,6 +25,14 @@ scoreboard objectives add finnick4.boats.latest.seconds dummy
 scoreboard objectives add finnick4.boats.latest.decimal.1 dummy
 scoreboard objectives add finnick4.boats.latest.decimal.2 dummy
 
+# seasonal
+scoreboard objectives add finnick4.boats.seasonal.duration dummy
+scoreboard objectives add finnick4.boats.seasonal.seconds dummy
+scoreboard objectives add finnick4.boats.seasonal.decimal.1 dummy
+scoreboard objectives add finnick4.boats.seasonal.decimal.2 dummy
+
+scoreboard objectives add finnick4.boats.season dummy
+
 ## Misc
 
 scoreboard objectives add finnick4.boats.stat.started dummy
@@ -41,4 +49,8 @@ scoreboard players set .2 finnick4.boats.calc 2
 
 # trigger
 scoreboard objectives add iceboat trigger
+
+## Initialisation
+execute unless score .been_initialised finnick4.boats.calc matches 1 run function finnick4:f4boats/initialise
+
 

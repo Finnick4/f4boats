@@ -1,0 +1,24 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:oak_chest_boat",
+        "components": {},
+        "count": 1
+      },
+      "title": "Skilled courier",
+      "description": "After practising at least three times, finish a race in a chest boat.",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "finnick4:boats/third",
+    "criteria": {
+      "comp_w_chestboat": {
+        "trigger": "minecraft:impossible"
+      },
+      "adv_third": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

@@ -1,4 +1,5 @@
-$say summoned a checkpoint entity with n = $(n) 
+
+$tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"] ","color":"dark_gray"},{"text":"Created checkpoint ","color":"gray"},{"text":"number $(n)","color":"green"},{"text":". ","color":"gray"},{"text":"Reminder: Place Bedrock","color":"red"},{"text":"!","color":"gray"}]
 
 summon marker ~ ~ ~ {Tags:["f4boats.checkpoint","f4boats.checkpoint.summoned"]}
 

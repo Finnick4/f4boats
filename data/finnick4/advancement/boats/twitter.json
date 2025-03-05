@@ -1,0 +1,21 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:barrier",
+        "components": {},
+        "count": 1
+      },
+      "title": "Twitter mentality",
+      "description": "Cancel a race",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "finnick4:boats/first",
+    "criteria": {
+      "canceled_race": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

@@ -1,0 +1,22 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:firework_rocket",
+        "components": {},
+        "count": 1
+      },
+      "title": "First race",
+      "description": "Complete your first race",
+      "frame": "goal",
+      "background": "minecraft:textures/block/ice.png",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "finnick4:boats/root",
+    "criteria": {
+      "root": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
