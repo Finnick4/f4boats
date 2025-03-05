@@ -1,4 +1,6 @@
 
+function finnick4:f4boats/seasonal/check-season
+
 playsound minecraft:entity.villager.trade master @s ~ ~ ~ 1
 
 execute if entity @s[tag=finnick4.f4boats.race] run tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"]","color":"dark_gray"},{"text":" You have already started a race!","color":"gray"}]
