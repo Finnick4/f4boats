@@ -7,7 +7,7 @@ title @s title {"text":""}
 execute as @s at @s run playsound minecraft:block.beacon.power_select master @s ~ ~ ~ 100 2
 execute as @s at @s run playsound minecraft:item.trident.riptide_3 master @s ~ ~ ~ 100 0.4
 
-function finnick4:f4boats/setup/internal/calculate-length
+
 
 execute store result score @s finnick4.boats.time.start run time query gametime
 
