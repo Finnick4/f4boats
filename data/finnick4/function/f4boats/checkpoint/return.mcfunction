@@ -19,3 +19,5 @@ execute as @s at @s run playsound minecraft:entity.enderman.teleport master @s ~
 scoreboard players add @s finnick4.boats.stat.returns 1
 scoreboard players add .global finnick4.boats.stat.returns 1
 
+advancement grant @s only finnick4:boats/return
+

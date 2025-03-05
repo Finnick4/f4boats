@@ -14,7 +14,10 @@
     },
     "parent": "finnick4:boats/third",
     "criteria": {
-      "root": {
+      "comp_w_chestboat": {
+        "trigger": "minecraft:impossible"
+      },
+      "adv_third": {
         "trigger": "minecraft:impossible"
       }
     }

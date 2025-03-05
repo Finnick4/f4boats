@@ -17,5 +17,8 @@
       "root": {
         "trigger": "minecraft:impossible"
       }
+    },
+    "rewards": {
+      "function": "finnick4:f4boats/advancement/third"
     }
   }

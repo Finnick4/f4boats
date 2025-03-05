@@ -14,7 +14,7 @@
     },
     "parent": "finnick4:boats/first",
     "criteria": {
-      "root": {
+      "canceled_race": {
         "trigger": "minecraft:impossible"
       }
     }

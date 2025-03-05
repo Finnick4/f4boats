@@ -14,7 +14,7 @@
     },
     "parent": "finnick4:boats/first",
     "criteria": {
-      "root": {
+      "returned": {
         "trigger": "minecraft:impossible"
       }
     }

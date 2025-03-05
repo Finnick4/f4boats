@@ -6,7 +6,7 @@
         "count": 1
       },
       "title": "Equilibrium",
-      "description": "Reach an equilibrium between activated checkpoints and number of returns.",
+      "description": "Check your stats while you have reached an equilibrium between activated checkpoints and number of returns. You must have completed at least 3 races!",
       "frame": "challenge",
       "show_toast": true,
       "announce_to_chat": true,
@@ -14,7 +14,10 @@
     },
     "parent": "finnick4:boats/return",
     "criteria": {
-      "root": {
+      "reach_equilibrium": {
+        "trigger": "minecraft:impossible"
+      },
+      "adv_third": {
         "trigger": "minecraft:impossible"
       }
     }

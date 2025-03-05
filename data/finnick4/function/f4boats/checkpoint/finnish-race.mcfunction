@@ -32,6 +32,6 @@ execute if score @s finnick4.boats.stat.finished matches 5.. run advancement gra
 execute if score @s finnick4.boats.stat.finished matches 10.. run advancement grant @s only finnick4:boats/pro
 execute if score @s finnick4.boats.stat.finished matches 20.. run advancement grant @s only finnick4:boats/expert
 
-execute on vehicle if entity @s[type=minecraft:birch_boat] on passengers run advancement grant @s only finnick4:boats/roman
-execute on vehicle if entity @s[type=minecraft:birch_chest_boat] on passengers run advancement grant @s only finnick4:boats/roman
+execute on vehicle if entity @s[type=#finnick4:boats/is_birch] on passengers run advancement grant @s only finnick4:boats/roman
+execute on vehicle if entity @s[type=#finnick4:boats/has_chest] on passengers run advancement grant @s only finnick4:boats/courier comp_w_chestboat
 
