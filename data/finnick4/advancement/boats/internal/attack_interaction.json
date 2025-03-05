@@ -1,0 +1,15 @@
+{
+    "criteria": {
+      "a": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "entity": {
+            "type": "minecraft:interaction"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "finnick4:f4boats/advancement/attack"
+    }
+  }
