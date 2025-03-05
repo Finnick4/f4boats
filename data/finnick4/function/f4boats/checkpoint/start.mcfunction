@@ -11,7 +11,10 @@ function finnick4:f4boats/setup/internal/calculate-length
 
 execute store result score @s finnick4.boats.time.start run time query gametime
 
-
+# check for better together advancement
+scoreboard players set .players finnick4.boats.calc 0
+execute as @a[tag=finnick4.f4boats.race] run scoreboard players add .players finnick4.boats.calc 1
+execute if score .players finnick4.boats.calc matches 2.. run advancement grant @a[tag=finnick4.f4boats.race] only finnick4:boats/together
 
 tag @s remove finnick4.f4boats.reached-checkpoint
 

@@ -16,4 +16,5 @@ tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua
 tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"]","color":"dark_gray"},{"text":" Canceled races: ","color":"gray"},{"score":{"name":"@s","objective":"finnick4.boats.stat.canceled"},"color":"light_purple"}]
 tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"]","color":"dark_gray"},{"text":" Times you visited this panel: ","color":"gray"},{"score":{"name":"@s","objective":"finnick4.boats.stat.menuviews"},"color":"light_purple"}]
 
+execute if score @s finnick4.boats.stat.checkpoints = @s finnick4.boats.stat.returns if score @s finnick4.boats.stat.finished matches 3.. run advancement grant @s only finnick4:boats/equilibrium reach_equilibrium
 

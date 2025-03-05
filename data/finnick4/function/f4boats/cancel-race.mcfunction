@@ -10,3 +10,4 @@ execute at @s run playsound minecraft:block.beacon.deactivate master @s ~ ~ ~ 1 
 scoreboard players add @s finnick4.boats.stat.canceled 1
 scoreboard players add .global finnick4.boats.stat.canceled 1
 
+advancement grant @s only finnick4:boats/twitter
