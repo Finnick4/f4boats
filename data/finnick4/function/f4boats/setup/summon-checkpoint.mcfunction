@@ -1,7 +1,5 @@
-$say summoned a checkpoint entity with n = $(n) 
 
-execute unless score .been_initialised finnick4.boats.calc matches 1 run function finnick4:f4boats/leaderboard/reset-leaderboard
-execute unless score .been_initialised finnick4.boats.calc matches 1 run scoreboard players set .been_initialised finnick4.boats.calc 1
+$tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"Ice Boat","color":"aqua"},{"text":"] ","color":"dark_gray"},{"text":"Created checkpoint ","color":"gray"},{"text":"number $(n)","color":"green"},{"text":". ","color":"gray"},{"text":"Reminder: Place Bedrock","color":"red"},{"text":"!","color":"gray"}]
 
 summon marker ~ ~ ~ {Tags:["f4boats.checkpoint","f4boats.checkpoint.summoned"]}
 

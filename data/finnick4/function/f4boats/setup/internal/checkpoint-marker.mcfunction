@@ -6,6 +6,5 @@ execute if score @s finnick4.boats.checkpoint matches 0 at @s run summon text_di
 execute if score @s finnick4.boats.checkpoint matches 0 at @s run summon interaction ~ ~ ~ {width:4f,height:4.5f,Tags:["finnick4.boats.startinteraction"]}
 
 execute as @s at @s rotated as @p run tp @s ~ ~ ~ ~ ~
-function finnick4:f4boats/setup/internal/calculate-length
 
 tag @s remove f4boats.checkpoint.summoned
