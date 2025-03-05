@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:spyglass",
+        "components": {},
+        "count": 1
+      },
+      "title": "Master stalker",
+      "description": "Open up every informative panel from /trigger iceboat!",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "finnick4:boats/root",
+    "criteria": {
+      "stats": {
+        "trigger": "minecraft:impossible"
+      },
+      "pb": {
+        "trigger": "minecraft:impossible"
+      },
+      "lb": {
+        "trigger": "minecraft:impossible"
+      },
+      "seasonal": {
+        "trigger": "minecraft:impossible"
+      },
+      "credits": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

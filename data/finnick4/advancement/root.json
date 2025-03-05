@@ -11,7 +11,7 @@
       },
       "title": "Finnick4 Datapacks",
       "description": "This world has at least one of Finnick4's datapacks installed!",
-      "background": "minecraft:textures/block/blue_ice.png",
+      "background": "minecraft:textures/block/spruce_planks.png",
       "frame": "task",
       "show_toast": false,
       "announce_to_chat": false,

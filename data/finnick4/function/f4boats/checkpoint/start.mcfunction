@@ -18,3 +18,5 @@ execute if score .players finnick4.boats.calc matches 2.. run advancement grant 
 
 tag @s remove finnick4.f4boats.reached-checkpoint
 
+advancement grant @s only finnick4:boats/root
+
