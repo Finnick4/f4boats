@@ -1,6 +1,8 @@
 # Finnick4's Ice Boat Racing
 This datapack enables server administrators to create an ice boat racing event for their SMP (or other server), allowing checkpoints, highscores, seasonal leaderboards and more! It must however be set up by someone with op.
 
+<img width="100%" alt="ice_boat_start" src="https://github.com/user-attachments/assets/d09f2da7-84bf-4fa5-b2e4-704abdb57f02" />
+
 ## Features
 - Easily setup your track for this datapack
 - Unaffected vanilla gameplay
